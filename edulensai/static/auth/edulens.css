@@ -14,12 +14,18 @@ body {
 
 /* Header Styling */
 .header {
+  position:relative;
   background-color: #003366;
   color: white;
   text-align: center;
   padding: 20px;
 }
 
+.profile-section{
+  position:absolute;
+  top:2px;
+  left:2px;
+}
 /* Sidebar Styling */
 .sidebar {
   background-color: white;
