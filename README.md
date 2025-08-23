@@ -1,25 +1,7 @@
 # EduLensProject
 EduLens AI is an AI-powered platform that tracks and analyzes educational performance in rural schools. It provides actionable insights through dashboards, alerts, and reports to support better decision-making for educators, parents, and policymakers.
 
-# ⚙️ Installation & Setup
 
-## 1. Clone the repository
-
-        git clone https://github.com/username/project-name.git
-
-        cd project-name
-
-## 2. Create Your Own Branch
-
-It’s best practice not to work directly on the main (or master) branch.
-
-        git checkout -b your-branch-name
-
--replace "your-branch-name" with the branch of your own in the format : my-branch
-
-Example:
-
-        git checkout -b frontend-dev
 
 ## 3.Create and activate a virtual environment
 
