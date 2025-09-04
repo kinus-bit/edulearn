@@ -12,20 +12,80 @@ body {
   color: #333;
 }
 
-/* Header Styling */
+/* Main Header */
 .header {
-  position:relative;
-  background-color: #003366;
+  display: flex;
+  justify-content: space-between;   /* space between left & right */
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #0d47a1, #1976d2); /* nice blue gradient */
   color: white;
-  text-align: center;
-  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.profile-section{
-  position:absolute;
-  top:2px;
-  left:2px;
+/* Left Section (Logo + Subtitle) */
+.header-left h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
 }
+
+.header-left p {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.85;
+}
+
+/* Profile Section in Header */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}
+.profile-section:hover {
+  transform: scale(1.05); /* subtle hover effect */
+}
+
+/* Force profile image to small circle */
+.profile-pic {
+  width: 45px !important;   /* fixed width */
+  height: 45px !important;  /* fixed height */
+  border-radius: 50%;       /* circle */
+  object-fit: cover;        /* prevent stretching */
+  border: 2px solid #fff;   /* white border for clarity */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+.username {
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+
+/* Auth Links (when logged out) */
+.auth-links a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.auth-links a:hover {
+  background: #fff;
+  color: #1976d2;
+}
+
 /* Sidebar Styling */
 .sidebar {
   background-color: white;

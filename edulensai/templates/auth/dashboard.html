@@ -21,10 +21,23 @@
 {% endif %}
   <!-- Header Section -->
   <header class="header">
+  <div class="header-left">
     <h1>EduLens AI</h1>
     <p>Predicting Dropout Risk in Rural Schools</p>
-    <span class="profile-section">👤</span>
-  </header>
+  </div>
+
+  {% if user.is_authenticated %}
+    <div class="profile-section">
+      <img src="{{ user.profile.image.url }}" alt="Profile Picture" class="profile-pic">
+      <span class="username">{{ user.username }}</span>
+    </div>
+  {% else %}
+    <div class="auth-links">
+      <a href="{% url 'login' %}">Login</a>
+    </div>
+  {% endif %}
+</header>
+
 
   <!-- Sidebar Section -->
 <aside class="sidebar">
